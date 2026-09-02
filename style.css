@@ -4,6 +4,7 @@
     border: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: floralwhite;
+    overflow-x: hidden;
 }
 body {
     text-align: center;
@@ -50,36 +51,20 @@ h3 {
 button {
     width: clamp(4.75rem, 6rem, 9.75rem);
     height: clamp(1.75rem, 2rem, 3.75rem);
-    border-radius: clamp(0.5rem, 1rem, 1.5rem);
+    border-radius: clamp(0.3rem, 7rem, 1rem);
     cursor: pointer;
-    background: #4242eb;
+    background: seagreen;
     font-size: clamp(0.75rem, 1rem, 1.25rem);
 }
-
-
-#terms
-{
-    display: inline-block;
-    width: 100%;
-}
-
-#terms > input[type="checkbox"]
-{
+input[type="checkbox"] {
     width: 15px;
     height: 15px;
 }
 
 button:disabled {
-    opacity: 0.5;
+    background-color: indianred;
     cursor: not-allowed;
 }
-
-button:enabled {
-    cursor: pointer;
-}
-
-
-
 @media (max-width: 700px) {
     form {
         width: 96%;

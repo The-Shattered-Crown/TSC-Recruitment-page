@@ -1,13 +1,7 @@
-#header {
-    font-size: clamp(1.25rem, 1.50rem, 1.75rem);
-    font-size: clamp(1rem, 1.25rem, 1.50rem);
-    padding-top: clamp(0.25rem, 0.50rem, 0.75rem);
-    color: grey;
-}
 h2 {
-    color: grey;
     font-size: clamp(1rem, 1.25rem, 1.50rem);
     padding-top: clamp(0.25rem, 0.50rem, 0.75rem);
+    color: grey;
 }
 nav {
     max-width: 800px;
