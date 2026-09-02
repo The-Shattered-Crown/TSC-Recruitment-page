@@ -1,12 +1,18 @@
 const form = document.querySelector("form");
 const checkbox = form.querySelector("input[type='checkbox']");
 const submit = form.querySelector("button[type='submit']");
-
-checkbox.addEventListener("change" , () => {
-    if(checkbox.checked == true){
-        submit.disabled = false;
-    }
-    else {
-      submit.disabled = true;
-    }
+form.addEventListener("input", (event) => {
+  event.preventDefault();
+  const name = form.querySelector("input[type='text']").value;
+  const email = form.querySelector("input[type='email']").value;
+  const experience = document.getElementById("exp").value;
+  if (name && email && experience && checkbox.checked) {
+    submit.disabled = false;
+  }
+  else {
+    submit.disabled = true;
+  }
 });
+if (submit.disabled == true) {
+   submit.title = "Please fill all fields and accept the terms to submit";
+}

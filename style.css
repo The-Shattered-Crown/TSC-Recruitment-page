@@ -60,7 +60,6 @@ input[type="checkbox"] {
     width: 15px;
     height: 15px;
 }
-
 button:disabled {
     background-color: indianred;
     cursor: not-allowed;
