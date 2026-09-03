@@ -10,7 +10,7 @@ body {
     text-align: center;
     background-color: #fffaf0;
     font-family: sans-serif;
-
+    height: fit-content;
 }
 form {
     width: 40%;
@@ -57,8 +57,8 @@ button {
     font-size: clamp(0.75rem, 1rem, 1.25rem);
 }
 input[type="checkbox"] {
-    width: 15px;
-    height: 15px;
+    width: clamp(0.75rem, 0.9375rem, 1.25rem);
+    height: clamp(0.75rem, 0.9375rem, 1.25rem);
 }
 button:disabled {
     background-color: indianred;
