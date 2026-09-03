@@ -9,7 +9,7 @@ email.placeholder = "Enter Email";
 experience.placeholder = "Describe your experience so far";
 form.addEventListener("input", (event) => {
   event.preventDefault();
-  if (Name.value && email.validity.valid && experience.value && checkbox.checked) {
+  if (Name.value && email.validity.valid && email.value && experience.value && checkbox.checked) {
     submit.disabled = false;
   }
   else {
