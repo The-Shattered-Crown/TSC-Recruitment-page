@@ -24,3 +24,21 @@ p {
     padding-bottom: clamp(0.25rem, 0.50rem, 0.75rem);
     color: grey;
 }
+#darkmode-button {
+    font-size: clamp(0.5rem, 0.75rem, 1rem);
+    width: clamp(2rem, 2.5rem, 3rem);
+    height: clamp(2rem, 2.5rem, 3rem);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body#dark-mode h2 {
+  color: #ccc;
+}
+body#dark-mode p {
+  color: #ccc;
+}
+body#dark-mode div {
+  border-color: #ccc;
+}
