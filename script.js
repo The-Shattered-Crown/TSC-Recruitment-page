@@ -1,20 +1,19 @@
-const darkModeButton = document.getElementById("darkmode-button");
-let state = sessionStorage.getItem("darkMode") == "true";
-
+let state = JSON.parse(sessionStorage.getItem("darkMode"))
 function darkmode() {
   if (state) {
-    document.body.removeAttribute("id");
-  } else {
     document.body.id = "dark-mode";
   }
-  sessionStorage.setItem("darkMode", state);
+  else {
+    document.body.removeAttribute("id");
+  }
+  sessionStorage.setItem("darkMode", JSON.stringify(state));
 }
 
 darkmode();
 
 if (darkModeButton != null) {
   darkModeButton.addEventListener("click", () => {
-    state = !state;
+    state = !state
     darkmode();
   });
 }
